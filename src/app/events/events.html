@@ -1,0 +1,10 @@
+<br />
+<br />
+<h1 class="font-serif">Event Handlers:-></h1>
+<button (click)="HandleEvent($event)" class="bg-fuchsia-800 cursor-pointer rounded-md p-0.5">Button Event</button>
+
+<div (mouseenter)="HandleEvent($event)" class="bg-amber-300 w-[100px] h-[100px] mt-4"></div>
+
+<div (mouseleave)="HandleEvent($event)" class="bg-purple-300 w-[100px] h-[100px] mt-4"></div>
+
+<input (input)="HandleEvent($event)" type="text" placeholder="Enter the text" class="my-4 border rounded-xl px-2" />
