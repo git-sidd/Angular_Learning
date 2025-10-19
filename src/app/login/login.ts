@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Login {
   clickMe(){
-    alert('This is ROHITs Yard Now ')
+    console.log('This is ROHITs Yard Now ');
+    this.func();
+    
+  }
+  func(){
+    console.log("Hello Siddhesh I am on the console!!")
   }
 }

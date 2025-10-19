@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Login } from './login/login';
+import { Counter } from './counter/counter';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login],
+  imports: [Login,Counter],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -15,6 +16,9 @@ export class App {
   func() {
     let a=10;
     return `Hello you age is ${this.name   +a}`;                          
+  }
+  sum(a:number,b:number){
+    console.log(a+b);
   }
   
 }
