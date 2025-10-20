@@ -4,11 +4,12 @@ import { Counter } from './counter/counter';
 import { Events } from './events/events';
 import { InputField } from './input-field/input-field';
 import { IfElse } from './if-else/if-else';
+import { Switch } from './switch/switch';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events,InputField,IfElse],
+  imports: [Login,Counter,Events,InputField,IfElse,Switch],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
