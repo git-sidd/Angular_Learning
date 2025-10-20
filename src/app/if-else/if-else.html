@@ -1,0 +1,16 @@
+<p>if-else works!</p>
+
+<div class="flex gap-2">
+    <button (click)="hide()" class="bg-gray-300 rounded-md px-1">Hide Me</button>
+<button (click)="show()" class="bg-gray-300 rounded-md px-1">Show Me</button>
+<button (click)="toggle()" class="bg-gray-300 rounded-md px-1">Toggle Me</button>
+</div>
+
+@if(display){
+    <div class="bg-amber-700 h-[100px] w-[100px] mt-2 mb-10">
+</div>
+}
+@else{
+    <div class="bg-red-300 h-[100px] w-[100px] mt-2 mb-10">
+</div>
+}
