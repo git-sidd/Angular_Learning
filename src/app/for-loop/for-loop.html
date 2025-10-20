@@ -1,0 +1,17 @@
+<hr>
+<p class="mt-3">for-loop works!</p>
+
+<div>
+
+    @for(student of students;track student.name){
+        <hr>
+        <div class="flex gap-2 my-1">
+            <h1>{{student.name}}</h1>
+            <h1>{{student.age}}</h1>
+            <h1>{{student.email}}</h1>
+            <button (click)="getname(student.name)" class="bg-yellow-500 rounded-2xl px-2 cursor-pointer">Get_Name</button>
+        </div>
+        <hr>
+    }
+
+</div>
