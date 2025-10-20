@@ -2,11 +2,12 @@ import { Component, signal } from '@angular/core';
 import { Login } from './login/login';
 import { Counter } from './counter/counter';
 import { Events } from './events/events';
+import { InputField } from './input-field/input-field';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events],
+  imports: [Login,Counter,Events,InputField],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
