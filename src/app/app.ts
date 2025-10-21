@@ -6,11 +6,12 @@ import { InputField } from './input-field/input-field';
 import { IfElse } from './if-else/if-else';
 import { Switch } from './switch/switch';
 import { ForLoop } from './for-loop/for-loop';
+import { Signals } from './signals/signals';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop],
+  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
