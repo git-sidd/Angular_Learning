@@ -7,11 +7,12 @@ import { IfElse } from './if-else/if-else';
 import { Switch } from './switch/switch';
 import { ForLoop } from './for-loop/for-loop';
 import { Signals } from './signals/signals';
+import { TwoWayBinding } from './two-way-binding/two-way-binding';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals],
+  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals,TwoWayBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
