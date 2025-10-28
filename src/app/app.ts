@@ -8,11 +8,12 @@ import { Switch } from './switch/switch';
 import { ForLoop } from './for-loop/for-loop';
 import { Signals } from './signals/signals';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
+import { TodoApp } from './todo-app/todo-app';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals,TwoWayBinding],
+  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals,TwoWayBinding,TodoApp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
