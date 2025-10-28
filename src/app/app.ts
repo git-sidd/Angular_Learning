@@ -10,11 +10,12 @@ import { Signals } from './signals/signals';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoApp } from './todo-app/todo-app';
 import { DynamicStyling } from './dynamic-styling/dynamic-styling';
+import { Directives } from './directives/directives';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals,TwoWayBinding,TodoApp,DynamicStyling],
+  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals,TwoWayBinding,TodoApp,DynamicStyling,Directives],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,21 @@
+<p *ngIf="show" class="bg-red-400 text-4xl">If directives works!</p>
+
+<ol>
+    <li *ngFor="let item of students">
+        {{item}}
+    </li>
+</ol>
+
+<ul>
+    <li *ngFor="let x of studData">
+       
+            <p>{{x.name}} <span>{{x.age}}</span></p>
+    </li>
+</ul>
+
+<div *ngIf="login; else elseBlock">
+    <a href="" class="text-red-700">logout</a>
+</div>
+<ng-template #elseBlock>
+    <a href="" class="text-green-600">login</a>
+</ng-template>
