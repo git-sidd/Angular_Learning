@@ -11,24 +11,26 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoApp } from './todo-app/todo-app';
 import { DynamicStyling } from './dynamic-styling/dynamic-styling';
 import { Directives } from './directives/directives';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Header } from './header/header';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Counter,Events,InputField,IfElse,Switch,ForLoop,Signals,TwoWayBinding,TodoApp,DynamicStyling,Directives],
+  imports: [Header,RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected readonly title = signal('angular-tut');
-  name="Siddhesh";
-  post="Hitman"
-  func() {
-    let a=10;
-    return `Hello you age is ${this.name   +a}`;                          
-  }
-  sum(a:number,b:number){
-    console.log(a+b);
-  }
+  // protected readonly title = signal('angular-tut');
+  // name="Siddhesh";
+  // post="Hitman"
+  // func() {
+  //   let a=10;
+  //   return `Hello you age is ${this.name   +a}`;                          
+  // }
+  // sum(a:number,b:number){
+  //   console.log(a+b);
+  // }
   
 }

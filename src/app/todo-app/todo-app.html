@@ -8,13 +8,13 @@
   />
   <button (click)="addTask()" class="bg-amber-400 px-1 rounded-2xl border">Add Task</button>
 </div>
-<div>
+<div class="flex justify-center flex-col">
   <h1 class="text-center my-4 font-serif font-bold">Tasks Todo</h1>
   <table class="border-collapse border border-gray-300 ">
     <thead>
-      <tr class="border flex  justify-around">
+      <tr class="border flex  justify-between">
         <th class="border border-gray-300 p-2">Sr.No</th>
-        <th class="border border-gray-300 p-2">Task</th>
+        <th class="">Task</th>
         <th class="border border-gray-300 p-2">Options</th>
       </tr>
     </thead>
@@ -23,7 +23,7 @@
       @for(task of tasklist;track task.id){
       <tr class="border flex gap-4 justify-between">
         <td class="border border-gray-300 p-2">{{ task.id }}</td>
-        <td class="border border-gray-300 p-2">{{ task.tname }}</td>
+        <td class="">{{ task.tname }}</td>
         <td class="border border-gray-300 p-2 text-red-600 cursor-pointer"><button (click)="deleteTask(task.id)">delete</button></td>
       </tr>
       }
