@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
+  // imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrls: ['./home.css']
 })
 export class Home {
 
+    // constructor(private router:Router){}
+
+    // goToProfile(){
+    //   this.router.navigate(['/profile'],{queryParams:{name:'Siddhesh Patole'}});
+    // }
 }
