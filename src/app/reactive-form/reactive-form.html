@@ -1,0 +1,27 @@
+<h1 class="text-3xl font-bold font-serif">Reactive Forms</h1>
+
+<!-- <div>
+    <input type="text" class="border border-amber-800 rounded-sm ml-4 mt-4" [formControl]="name" placeholder="Enter Name">
+    <br><br>
+    <input type="text" class="border border-amber-800 rounded-sm ml-4 " [formControl]="password"  placeholder="Enter Password">
+    <br><br>
+    <button (click)="getDetails()" class="bg-amber-800 ml-5 p-1 rounded-sm ">Login</button>
+</div>
+<div>
+    <h2>Name {{name.value}}</h2>
+    <h2>Password {{password.value}}</h2>
+</div> -->
+
+
+<form action="" [formGroup]="FormData" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Name" class="border border-amber-800 rounded-sm ml-4 mt-4" formControlName="name">
+    <br>
+    <br>
+    <input type="text" placeholder="Email" class="border border-amber-800 rounded-sm ml-4" formControlName="email">
+    <br><br>
+    <input type="text" placeholder="Password" class="border border-amber-800 rounded-sm ml-4" formControlName="password">
+    <br>
+    <br>
+    <button class="bg-amber-800 ml-5 p-1 rounded-sm ">Login</button>
+</form>
+
