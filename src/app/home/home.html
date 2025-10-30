@@ -12,4 +12,10 @@
 <button (click)="goToProfile()" class="bg-amber-700 p-2 text-2xl rounded-md text-center ml-20">Go To Profile</button> -->
 
 
-<button routerLink="profile" class="bg-amber-700 p-2 text-2xl rounded-md text-center ml-20">Go To Profile</button>
+<!-- <button routerLink="profile" class="bg-amber-700 p-2 text-2xl rounded-md text-center ml-20">Go To Profile</button> -->
+
+<ul>
+    @for(user of users;track user.id){
+        <li class="ml-5"><span>-></span><a routerLink='/user/{{user.id}}'>{{user.name}}</a></li>
+    }
+</ul>

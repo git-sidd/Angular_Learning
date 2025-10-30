@@ -16,4 +16,27 @@ export class Home {
     // goToProfile(){
     //   this.router.navigate(['/profile'],{queryParams:{name:'Siddhesh Patole'}});
     // }
+
+    users=[
+    {
+      id:'1',
+      name:"Siddhesh",
+      age:21
+    },
+    {
+      id:'2',
+      name:"Sakshi",
+      age:23
+    },
+    {
+      id:'3',
+      name:"Pornima",
+      age:42
+    },
+    {
+      id:'4',
+      name:"Ramesh",
+      age:46
+    }
+  ]
 }
